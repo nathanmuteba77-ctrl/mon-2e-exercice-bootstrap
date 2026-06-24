@@ -355,3 +355,6 @@
         width:60%;
     }
 }
+html{
+    scroll-behavior:smooth;
+}

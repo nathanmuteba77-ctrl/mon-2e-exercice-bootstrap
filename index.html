@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mon vrai site web</title>
+    <title>NovaShop</title>
+
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+    </style>
 </head>
-
 
 <body>
 
-
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
 
-        <a class="navbar-brand" href="#">NovaShop</a>
+        <a class="navbar-brand" href="#home">NovaShop</a>
 
-        <button class="navbar-toggler" type="button"
+        <button class="navbar-toggler"
+                type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -29,193 +35,292 @@
             <ul class="navbar-nav mx-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#products">Products</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
 
             </ul>
 
-            <button class="btn btn-custom">
+            <a href="#contact" class="btn btn-custom">
                 Sign Up
-            </button>
+            </a>
 
         </div>
     </div>
 </nav>
 
-
-<section class="hero">
+<!-- HERO -->
+<section class="hero" id="home">
     <div class="container">
         <div class="row text-center justify-content-center align-items-center">
-            <div class="col-lg-7 ">
-                <h4>venez visiter notre site</h4>
-                <h1>je vous assure que vous serez pas déçu</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos ab consequatur? Officia, alias suscipit.</p>
-                <button class="btn btn-danger px-5">cliquez ici</button>
+
+            <div class="col-lg-7">
+                <h4>Venez visiter notre site</h4>
+
+                <h1>Je vous assure que vous ne serez pas déçu</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Delectus quos ab consequatur? Officia, alias suscipit.
+                </p>
+
+                <a href="#products" class="btn btn-danger px-5">
+                    Cliquez ici
+                </a>
             </div>
-            <div class="col-lg-5"> <img src="Img/Hat 1.jpg" class="img-fluid" alt="">
-             </div>
-           
+
+            <div class="col-lg-5">
+                <img src="Img/Hat 1.jpg" class="img-fluid" alt="">
+            </div>
+
         </div>
     </div>
 </section>
 
-
-<section class="presentation">
+<!-- PRESENTATION -->
+<section class="presentation" id="products">
     <div class="container">
+
         <div class="row py-5">
+
             <div class="col-lg-4">
-                <img src="Img/Silver high heel shoes.jpg" class="img-fluid" alt="">
+                <img src="Img/Silver high heel shoes.jpg"
+                     class="img-fluid"
+                     alt="">
             </div>
+
             <div class="col-lg-8">
-                <h1 class="lignes fw-bold">nouveauté</h1>
-                <h3 class="pt-3">talons et sac de haute qualite</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum dolore odit! Modi laborum doloribus quasi esse fugiat odit minus illum ipsa omnis cupiditate! Veritatis placeat voluptate eum fuga, quo dolorem quisquam error illum enim aliquam in pariatur est natus reiciendis, saepe quibusdam recusandae? Expedita unde reiciendis animi explicabo perspiciatis nemo consequatur optio veniam. Ipsam cumque quis veritatis. Blanditiis ducimus facere, ab iure aperiam aut numquam aliquid sequi temporibus cumque nihil consequuntur voluptatem totam nam quia officia quam necessitatibus. Quam voluptatum pariatur eum? Quisquam error perferendis ex similique hic ratione dolorem, sunt molestias numquam illo aspernatur, quae sit quasi voluptas.</p>
-                <button class="custom-btn">contactez-nous</button>
+
+                <h1 class="lignes fw-bold">Nouveauté</h1>
+
+                <h3 class="pt-3">
+                    Talons et sacs de haute qualité
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati dolorum dolore odit!
+                </p>
+
+                <a href="#contact"
+                   class="custom-btn text-decoration-none">
+                    Contactez-nous
+                </a>
+
             </div>
+
         </div>
+
     </div>
 </section>
 
-
-<section class="skills">
+<!-- SERVICES -->
+<section class="skills" id="services">
     <div class="container py-5">
+
         <div class="row">
             <div class="col-lg-5 text-center m-auto">
-                <h2 class="lignes fw-bold text-uppercase">nos préoccupations</h2>
+                <h2 class="lignes fw-bold text-uppercase">
+                    Nos préoccupations
+                </h2>
             </div>
         </div>
+
         <div class="row py-5">
+
             <div class="col-lg-6">
-                <h3>nos clients sont notre priorité</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam id eveniet dignissimos explicabo, libero ducimus dolorem quae laborum fuga sint earum voluptates voluptatem nobis modi quam amet! Quo totam unde perspiciatis doloribus dolorum officia quasi, numquam id similique molestias repellendus ratione ullam, natus molestiae? Unde dolorem eius nisi dolore voluptate. Dolorem quis exercitationem quia nam rem quibusdam omnis architecto minima sit ratione, repellat harum! Eum sit quo sed, asperiores accusamus iure distinctio dolores non natus doloribus repellendus necessitatibus saepe laudantium odit fugit adipisci aliquam ullam nulla! Labore earum molestias quo quas distinctio voluptate maxime iure tempora nam, ipsum ad odio.</p>
+                <h3>Nos clients sont notre priorité</h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aperiam id eveniet dignissimos explicabo.
+                </p>
             </div>
+
             <div class="col-lg-6">
-                <div class="row fs-4" style="color: rgb(10, 117, 211);">
-                    <div class="col-lg-6 py-4 ">
+
+                <div class="row fs-4"
+                     style="color:rgb(10,117,211);">
+
+                    <div class="col-lg-6 py-4">
                         <p>TALONS</p>
                         <h1>90%</h1>
                     </div>
+
                     <div class="col-lg-6 py-4">
                         <p>CHAPEAUX</p>
-                        <H1>80%</H1>
+                        <h1>80%</h1>
                     </div>
+
                     <div class="col-lg-6">
                         <p>SACS</p>
                         <h1>70%</h1>
                     </div>
+
                     <div class="col-lg-6">
-                        <P>ROBES</P>
-                        <H1>60%</H1>
+                        <p>ROBES</p>
+                        <h1>60%</h1>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
 </section>
 
+<!-- ABOUT -->
+<section class="cartes" id="about">
 
-<section class="cartes">
     <div class="container py-5">
+
         <div class="row py-5">
-                        <div class="col-lg-6 text-center m-auto">
-                <h2 class="lignes">ce mois-ci</h2>
+            <div class="col-lg-6 text-center m-auto">
+                <h2 class="lignes">Ce mois-ci</h2>
             </div>
         </div>
+
         <div class="row py-5">
 
+            <!-- Carte 1 -->
             <div class="col-lg-4">
-    <div class="custom-card">
-        <div class="card-icon">
-            👌
+
+                <div class="custom-card">
+
+                    <div class="card-icon">
+                        👌
+                    </div>
+
+                    <h3>Des réductions jusqu'à 70%</h3>
+
+                    <p>
+                        Découvrez nos promotions exceptionnelles.
+                    </p>
+
+                    <a href="#products"
+                       class="btn btn-light">
+                        En savoir plus
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-lg-4">
+
+                <div class="custom-card">
+
+                    <div class="card-icon">
+                        💻
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Création de sites web modernes et performants.
+                    </p>
+
+                    <a href="#services"
+                       class="btn btn-light">
+                        En savoir plus
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-lg-4">
+
+                <div class="custom-card">
+
+                    <div class="card-icon">
+                        🎁
+                    </div>
+
+                    <h3>Des cadeaux à vous couper le souffle</h3>
+
+                    <p>
+                        Découvrez nos meilleures idées cadeaux.
+                    </p>
+
+                    <a href="#contact"
+                       class="btn btn-light">
+                        En savoir plus
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <h3>des reductions jusqu'à 70%</h3>
-
-        <p>
-            lorem10
-        </p>
-
-        <a href="#" class="btn btn-light">
-            En savoir plus
-        </a>
     </div>
-</div>
-      <div class="col-lg-4">
-    <div class="custom-card">
-        <div class="card-icon">
-            💻
-        </div>
 
-        <h3>Web Development</h3>
-
-        <p>
-            Création de sites web modernes, responsives et performants
-            avec HTML, CSS, Bootstrap et JavaScript.
-        </p>
-
-        <a href="#" class="btn btn-light">
-            En savoir plus
-        </a>
-    </div>
-</div>
-      <div class="col-lg-4">
-    <div class="custom-card">
-        <div class="card-icon">
-            🎁
-        </div>
-
-        <h3>des cadeaux àvous couper le souffle</h3>
-
-        <p>
-              eveniet alias, commodi perferendis error rerum explicabo modi itaque dolor aut!
-        </p>
-
-        <a href="#" class="btn btn-light">
-            En savoir plus
-        </a>
-    </div>
-</div>
-
-        </div>
-        
-    </div>
 </section>
 
+<!-- CONTACT -->
+<section class="contact" id="contact">
 
-<section class="contact">
     <div class="container py-5">
+
         <div class="row">
+
             <div class="col-lg-5 m-auto text-center py-5">
-                <h2 class="lignes">nos adresses</h2>
-             
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center m-auto">
-                   <h3>que voulez-vous commander</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, illum! Ipsum, provident? Officia error iure porro amet labore iusto, earum consequatur molestias totam sit reprehenderit fugit beatae nam enim id dolorem aliquam. Quisquam obcaecati eligendi odio esse, distinctio corporis fuga dolores dignissimos iusto explicabo sed nostrum repellat ex cupiditate atque nam quam porro nobis magnam quasi, veniam suscipit! Sequi mollitia sapiente quis accusantium laborum, quasi tempore dolorum, aut perferendis impedit magnam! Fugit dolores reiciendis, esse harum tempora inventore beatae suscipit porro voluptate iusto quibusdam voluptatibus vel quidem perferendis sit iure, voluptatum autem? Quibusdam, impedit fugit numquam delectus temporibus hic enim odio ut, corrupti veritatis tempore iste veniam illo ab autem cum suscipit tenetur, atque deserunt? Rem accusantium illum quos dicta placeat ad nihil architecto repellendus sed! Delectus, ad exercitationem! Quam, ea quod facilis, doloremque obcaecati iusto officia nesciunt natus assumenda corrupti voluptatum ab hic qui laudantium illum ipsam eius aliquam!</p>
+
+                <h2 class="lignes">
+                    Nos adresses
+                </h2>
 
             </div>
+
         </div>
+
+        <div class="row">
+
+            <div class="col-lg-12 text-center m-auto">
+
+                <h3>
+                    Que voulez-vous commander ?
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse, illum! Ipsum, provident?Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi tempore cumque odit molestias explicabo eius repellendus eos quisquam! Deleniti ratione perspiciatis odit eveniet, quis fugit, quas similique est accusamus ipsum consequuntur, sequi reiciendis. Commodi magni eius perspiciatis modi blanditiis minima qui voluptate voluptas fugiat ipsa error quasi enim facilis id ducimus, vitae est molestiae non, voluptatem soluta laudantium excepturi eligendi! Vero, doloremque culpa. Rem cum inventore, quisquam incidunt et nesciunt obcaecati molestias laboriosam repellat dolorum, tempore, ullam quod ad cupiditate consequuntur suscipit deserunt eius. Voluptate rerum sint dicta reprehenderit quod, alias autem ad ducimus a aperiam nihil mollitia dignissimos hic?
+                </p>
+
+                <a href="#home"
+                   class="btn btn-primary px-4">
+                    Retour en haut
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
